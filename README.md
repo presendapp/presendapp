@@ -2,27 +2,30 @@
 
 **Free, privacy-first browser tools — nothing is ever uploaded.**
 
-[presend.pages.dev](https://presend.pages.dev) is a collection of **40 tools** that run entirely client-side (EXIF/metadata removal, PDF/image compression, format conversion, file integrity checks) plus a **free, no-signup, no-API-key server-side API** with 32 endpoints for developers.
+[presend.pages.dev](https://presend.pages.dev) is 48 tools that run entirely client-side (EXIF/metadata removal, PDF/image compression, format conversion, file integrity checks) plus a **free, no-signup, no-API-key server-side API** with 40 endpoints, and an MCP server for AI agents.
 
 ## What makes it different
 
-Most free file tools quietly upload your file to a server to process it. Presend's 38 of 40 tools do the work locally in your browser with Web APIs (Canvas, Web Crypto, FileReader) — the file never leaves your device. The 2 exceptions (IP lookup, link preview) are clearly labeled as server-side, since that's inherent to what they do.
+Most free file tools quietly upload your file to a server to process it. Presend's tools do the work locally in your browser with Web APIs (Canvas, Web Crypto, FileReader) — the file never leaves your device.
 
-The API layer takes the same "no friction" philosophy further: no account, no API key, and several endpoints **chain multiple operations into one call** — hash a file *and* check it against a known-malware database, decode a QR code *and* check the URL it contains for phishing, merge PDFs *and* compress the result — instead of making you call three separate free APIs and glue the results together yourself.
+The API's most distinctive endpoint, `maintainer-change-check`, flags an npm package whose publisher changed after a long period of dormancy — the exact pattern behind real supply-chain attacks like `event-stream`, `ua-parser-js`, and `colors.js`. Nothing else free does this specific check.
 
 ## Repos
 
 - **[presend](https://github.com/presendapp/presend)** — the site + API (Cloudflare Pages Functions)
+- **[presend-examples](https://github.com/presendapp/presend-examples)** — working code for LangChain, CrewAI, LlamaIndex, OpenAI Agents SDK, Google ADK
+- **[presend-mcp-config](https://github.com/presendapp/presend-mcp-config)** — copy-paste MCP setup for Claude Desktop, Cursor, Windsurf, no code required
+- **[presend-check-action](https://github.com/presendapp/presend-check-action)** — GitHub Action for dependency security scanning (npm + PyPI), on the [GitHub Marketplace](https://github.com/marketplace/actions/presend-dependency-security-check)
 - **[presend-extension](https://github.com/presendapp/presend-extension)** — browser extension: right-click any image to strip EXIF/GPS on-device
-- **[presend-api](https://github.com/presendapp/presend-api)** — zero-dependency npm client for the API ([npmjs.com/package/presend-api](https://www.npmjs.com/package/presend-api))
+- **[presend-api](https://github.com/presendapp/presend-api)** — zero-dependency npm client ([npmjs.com/package/presend-api](https://www.npmjs.com/package/presend-api))
 
-## Try the API
+## Try it
 
 ```bash
-curl "https://presend.pages.dev/api/hash" -X POST --data-binary @file.pdf
+curl "https://presend.pages.dev/api/maintainer-change-check?ecosystem=npm&package=lodash"
 ```
 
-Full docs: [presend.pages.dev/api](https://presend.pages.dev/api) · OpenAPI spec: [openapi.json](https://presend.pages.dev/openapi.json) · [Postman collection](https://presend.pages.dev/api)
+Full docs: [presend.pages.dev/api](https://presend.pages.dev/api) · OpenAPI spec: [openapi.json](https://presend.pages.dev/openapi.json) · MCP server: [presend.pages.dev/mcp](https://presend.pages.dev/mcp) · [Postman collection](https://presend.pages.dev/api)
 
 ## Built with
 
