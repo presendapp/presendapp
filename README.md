@@ -27,6 +27,14 @@ curl "https://presend.pages.dev/api/maintainer-change-check?ecosystem=npm&packag
 
 Full docs: [presend.pages.dev/api](https://presend.pages.dev/api) · OpenAPI spec: [openapi.json](https://presend.pages.dev/openapi.json) · MCP server: [presend.pages.dev/mcp](https://presend.pages.dev/mcp) · [Postman collection](https://presend.pages.dev/api)
 
+## Contributions
+
+Merged upstream in other open-source projects:
+
+- [public-apis/public-apis](https://github.com/public-apis/public-apis/pull/7326) — added Presend to the Security section (481k stars)
+- [public-api-lists/public-api-lists](https://github.com/public-api-lists/public-api-lists/pull/695) — added Presend to the Security section
+- [anondotli/awesome-privacy-tools](https://github.com/anondotli/awesome-privacy-tools/pull/26) — added Presend's EXIF Remover + PDF Metadata Remover
+
 ## Built with
 
 Vanilla JS, Cloudflare Pages + Pages Functions, no framework, no build step for the client-side tools. No ads, no tracking, no cookies.
