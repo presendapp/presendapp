@@ -19,6 +19,8 @@ The API's most distinctive endpoint, `maintainer-change-check`, flags an npm pac
 - **[presend-extension](https://github.com/presendapp/presend-extension)** — browser extension: right-click any image to strip EXIF/GPS on-device
 - **[presend-api](https://github.com/presendapp/presend-api)** — zero-dependency npm client ([npmjs.com/package/presend-api](https://www.npmjs.com/package/presend-api))
 
+- [security-research](https://github.com/presendapp/security-research) — responsible-disclosure writeups, published post-fix only
+
 ## Try it
 
 ```bash
