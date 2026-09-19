@@ -27,7 +27,7 @@ The API's most distinctive endpoint, `maintainer-change-check`, flags an npm pac
 curl "https://presend.pages.dev/api/maintainer-change-check?ecosystem=npm&package=lodash"
 ```
 
-Full docs: [presend.pages.dev/api](https://presend.pages.dev/api) · OpenAPI spec: [openapi.json](https://presend.pages.dev/openapi.json) · MCP server: [presend.pages.dev/mcp](https://presend.pages.dev/mcp) · [Postman collection](https://presend.pages.dev/api)
+Full docs: [presend.pages.dev/api](https://presend.pages.dev/api) · OpenAPI spec: [openapi.json](https://presend.pages.dev/openapi.json) · MCP server: [presend.pages.dev/mcp](https://presend.pages.dev/mcp) · Also on [RapidAPI](https://rapidapi.com/presendapp/api/presend-api) (split into Cybersecurity, Finance, and Email listings) · [Postman collection](https://presend.pages.dev/api)
 
 ## Contributions
 
