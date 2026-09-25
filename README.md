@@ -2,7 +2,7 @@
 
 **Free, privacy-first browser tools — nothing is ever uploaded.**
 
-[presend.pages.dev](https://presend.pages.dev) is 48 tools that run entirely client-side (EXIF/metadata removal, PDF/image compression, format conversion, file integrity checks) plus a **free, no-signup, no-API-key server-side API** with 42 endpoints -- including Cosmos SDK transaction decoding and OFAC sanctions checks -- and an MCP server for AI agents.
+[presend.pages.dev](https://presend.pages.dev) is 48 tools that run entirely client-side (EXIF/metadata removal, PDF/image compression, format conversion, file integrity checks) plus a **free, no-signup, no-API-key server-side API** with 48 endpoints -- including Cosmos SDK transaction decoding and OFAC sanctions checks -- and an MCP server for AI agents.
 
 ## What makes it different
 
