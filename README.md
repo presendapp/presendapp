@@ -8,7 +8,7 @@
 
 Most free file tools quietly upload your file to a server to process it. Presend's tools do the work locally in your browser with Web APIs (Canvas, Web Crypto, FileReader) — the file never leaves your device.
 
-The API's most distinctive endpoint, `maintainer-change-check`, flags an npm package whose publisher changed after a long period of dormancy — the exact pattern behind real supply-chain attacks like `event-stream`, `ua-parser-js`, and `colors.js`. Nothing else free does this specific check.
+The API's most distinctive endpoint, `maintainer-change-check`, flags an npm package whose publisher changed after a long period of dormancy — the pattern behind the `event-stream` compromise (2018). It cannot see a hijacked existing account (`ua-parser-js`) or a malicious release by the original maintainer (`colors.js`), and a handover to a publisher who already maintains other widely used packages is reported without being flagged.
 
 ## Repos
 
