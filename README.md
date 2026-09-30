@@ -12,7 +12,7 @@ The API's most distinctive endpoint, `maintainer-change-check`, flags an npm pac
 
 ## Repos
 
-- **[presend](https://github.com/presendapp/presend)** — the site + API (Cloudflare Pages Functions)
+- **[presend-source](https://github.com/presendapp/presend-source)** — the site + API (Cloudflare Pages Functions)
 - **[presend-examples](https://github.com/presendapp/presend-examples)** — working code for LangChain, CrewAI, LlamaIndex, OpenAI Agents SDK, Google ADK
 - **[presend-mcp-config](https://github.com/presendapp/presend-mcp-config)** — copy-paste MCP setup for Claude Desktop, Cursor, Windsurf, no code required
 - **[presend-check-action](https://github.com/presendapp/presend-check-action)** — GitHub Action for dependency security scanning (npm + PyPI), on the [GitHub Marketplace](https://github.com/marketplace/actions/presend-dependency-security-check)
