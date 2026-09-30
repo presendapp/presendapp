@@ -39,4 +39,4 @@ Merged upstream in other open-source projects:
 
 ## Built with
 
-Vanilla JS, Cloudflare Pages + Pages Functions, no framework, no build step for the client-side tools. No ads, no tracking, no cookies.
+Vanilla JS, Cloudflare Pages + Pages Functions, no framework, no build step for the client-side tools. No ads. Anonymous visit counts only (Cloudflare Web Analytics).
