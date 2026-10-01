@@ -1,14 +1,18 @@
 # Presend
 
-**Free, privacy-first browser tools — nothing is ever uploaded.**
+**Free, privacy-first browser tools — the file tools never upload your files.**
 
-[presend.pages.dev](https://presend.pages.dev) is 48 tools that run entirely client-side (EXIF/metadata removal, PDF/image compression, format conversion, file integrity checks) plus a **free, no-signup, no-API-key server-side API** with 48 endpoints -- including Cosmos SDK transaction decoding and OFAC sanctions checks -- and an MCP server for AI agents.
+[presend.pages.dev](https://presend.pages.dev) is 48 browser tools — the file tools (EXIF/metadata removal, PDF/image compression, format conversion, file integrity checks) run entirely client-side, while some other tools call our API or an online service plus a **free, no-signup, no-API-key server-side API** with 48 endpoints -- including Cosmos SDK transaction decoding and OFAC sanctions checks -- and an MCP server for AI agents.
 
 ## What makes it different
 
-Most free file tools quietly upload your file to a server to process it. Presend's tools do the work locally in your browser with Web APIs (Canvas, Web Crypto, FileReader) — the file never leaves your device.
+Most free file tools quietly upload your file to a server to process it. Presend's file tools do the work locally in your browser with Web APIs (Canvas, Web Crypto, FileReader) — the file never leaves your device.
 
 The API's most distinctive endpoint, `maintainer-change-check`, flags an npm package whose publisher changed after a long period of dormancy — the pattern behind the `event-stream` compromise (2018). It cannot see a hijacked existing account (`ua-parser-js`) or a malicious release by the original maintainer (`colors.js`), and a handover to a publisher who already maintains other widely used packages is reported without being flagged.
+
+## For teams
+
+We are testing a paid offer for teams: the same dependency checks on every pull request that changes a dependency and for AI coding agents before they install a package, with false-positive rates measured and published. Nothing is for sale yet. If your team would use it, [join the waitlist](https://presend.pages.dev/teams).
 
 ## Repos
 
@@ -20,6 +24,8 @@ The API's most distinctive endpoint, `maintainer-change-check`, flags an npm pac
 - **[presend-api](https://github.com/presendapp/presend-api)** — zero-dependency npm client ([npmjs.com/package/presend-api](https://www.npmjs.com/package/presend-api))
 
 - [security-research](https://github.com/presendapp/security-research) — responsible-disclosure writeups, published post-fix only
+
+_Edited 2026-10-01: the browser-tools claim now covers the file tools only; some other tools (for example IP geolocation, link preview, DNS lookup, speech-to-text, online text-to-speech voices) call our API or an online service; third-party services are listed in the [privacy policy](https://presend.pages.dev/privacy)._
 
 ## Try it
 
